@@ -1,18 +1,14 @@
-import {ButtonsListContainer, Button} from './styledComponents'
+import './index.css'
 
 const LanguageItem = props => {
-  const {LanguageItemDetails, isActive, onClickChangeLanguage} = props
-  const {buttonText, id} = LanguageItemDetails
-  const onClickButton = () => {
-    onClickChangeLanguage(id)
-  }
-
+  const {languageDetails} = props
+  const {imageUrl, imageAltText} = languageDetails
   return (
-    <ButtonsListContainer>
-      <Button type="button" active={isActive} onClick={onClickButton}>
-        {buttonText}
-      </Button>
-    </ButtonsListContainer>
+    <>
+      <li className="item-container">
+        <img className="item-image" src={imageUrl} alt={`${imageAltText}`} />
+      </li>
+    </>
   )
 }
 

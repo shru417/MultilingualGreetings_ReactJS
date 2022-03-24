@@ -10,3 +10,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+.tabs-container {
+  display: flex;
+  margin: 10px;
+}
